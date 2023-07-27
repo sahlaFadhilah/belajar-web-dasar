@@ -1,0 +1,240 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap);
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+body {
+  background: hsl(0, 0%, 90%);
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3 {
+  color: #75d1e1;
+}
+
+main {
+  padding: 20px;
+  overflow: auto
+}
+
+#content {
+  float: left;
+  width: 75%
+}
+
+.jumbotron {
+  background: url("../img/IMG_20210605_160201.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 1400px;
+  padding: 240px 0 240px 0;
+  text-align: center;
+  color: #fff;
+  margin-bottom: -20px;
+}
+
+.judTron {
+  font-size: 75px;
+  font-weight: 700;
+}
+
+.subTron{
+  font-size: 20px;
+  background-color: rgba(105, 105, 105, 0.32);
+  padding: 5px;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px
+}
+
+.profile header {
+  text-align: center
+}
+
+.featured-image {
+  width: 50%;
+  object-fit: cover;
+  object-position: center;
+  padding: 10%;
+}
+
+header {
+  display: inline
+}
+
+aside {
+  float: right;
+  width: 25%;
+  padding-left: 20px
+}
+
+footer {
+  background: linear-gradient(90deg, rgba(249,249,249,1) 1%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+  padding: 20px;
+  color: #cfcfcf;
+  text-align: center;
+  font-weight: 700
+}
+
+nav {
+  font-size: 18px;
+  background: linear-gradient(90deg, rgba(209,209,209,1) 2%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+}
+
+nav a{
+  color: #75d1e1;
+}
+
+ul {
+  list-style-type: none;
+  display: none;
+}
+
+
+ul li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  width: 65%;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.nav-toggle {
+  position: absolute;
+  margin-top: 4%;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(216, 216, 216, 0.84);
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (max-width:769px){
+  #content,
+  aside {
+    width: 100%;
+    padding: 0
+  }
+
+  .judTron {
+  font-size: 40px;
+  }
+
+  .subTron{
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width:480px) {
+
+  .judTron {
+  font-size: 34px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  ul li {
+    margin: 0;
+  }
+
+  nav a {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  a:hover {
+    color: rgba(218, 218, 218, 0.58);
+  }
+}
+
+.jur {
+  background: white;
+  margin-bottom: 32px;  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.jur-content {
+  padding: 16px;
+}
+
+.jur-content h2 {
+  margin-top: 0;
+  margin-bottom: .80px;
+  font-weight: bold;
+}
+
+.jur-content p {
+  font-size: 80%;
+}
+
+@media screen and (min-width: 640px) {
+    .jurs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .jur {
+        flex: 0 1 calc(50% - 16px);
+    }
+}
+
+@media screen and (min-width: 960px) {
+
+    .jur {
+        flex: 0 1 calc(25% - 0px);
+    }
+}
