@@ -30,7 +30,7 @@ main {
 }
 
 .jumbotron {
-  background: url("../img/IMG_20210605_160201.jpg");
+  background: url("../img/disney.PNG");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -44,12 +44,14 @@ main {
 .judTron {
   font-size: 75px;
   font-weight: 700;
+  font-family: fantasy;
 }
 
 .subTron{
   font-size: 20px;
   background-color: rgba(105, 105, 105, 0.32);
   padding: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .card {
@@ -65,7 +67,7 @@ main {
 }
 
 .featured-image {
-  width: 50%;
+  width: 90%;
   object-fit: cover;
   object-position: center;
   padding: 10%;
@@ -92,7 +94,7 @@ footer {
 
 nav {
   font-size: 18px;
-  background: linear-gradient(90deg, rgba(209,209,209,1) 2%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 2%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
   border-radius: 5px;
   padding-bottom: 10px;
